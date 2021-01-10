@@ -60,3 +60,15 @@ body {
     cursor: auto;
 }
 
+.catalog-header {
+    font-family: "Century Gothic", Arial, Helvetica Neue, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 300;
+    border-bottom: white dotted 2px;
+}
+
+.catalog {
+    margin: 0px 0px 72px 0px;
+}
