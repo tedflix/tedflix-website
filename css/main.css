@@ -1,11 +1,18 @@
 body {
-    background-color: rgba(20, 20, 20, 1);
+    background-color: rgba(40, 40, 40, 1);
     margin: 0;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-    
+.content {
+    margin: 8px;
+    animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .header {
@@ -23,4 +30,32 @@ body {
 
 .logo {
     border-right: white solid 2px;
+    display: inline-block;
+    padding: 0px 8px;
 }
+
+.menu {
+    display: inline-flex;
+    vertical-align: super;
+    margin: 0px 16px;
+}
+
+.menu > div {
+    font-size: 14px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 1s;
+}
+
+.menu > div:hover:not(.active) {
+    background-color: rgba(80, 80, 80, 1);
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgba(80, 80, 80, 1);
+    cursor: auto;
+}
+
