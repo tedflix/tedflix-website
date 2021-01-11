@@ -46,20 +46,30 @@ body {
     margin: 8px;
     padding: 8px;
     font-weight: bold;
-    transition: background-color 1s;
+    
 }
 
-.menu > div:hover:not(.active) {
-    background-color: rgba(60, 60, 60, 1);
+.menu > div:hover {
     cursor: pointer;
 }
 
-.active {
-    cursor: auto;
-
+.menu > div:after {
+    display: block;
+    content: '';
     border-color: white;
     border-style: solid;
     border-width: 0 0 2px 0;
+
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.menu > div:hover:after {
+    transform: scaleX(1);
+}
+
+.menu > div.active:after {
+    transform: scaleX(1);
 }
 
 .catalog-header {
