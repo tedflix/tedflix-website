@@ -24,7 +24,7 @@ body {
     position: sticky;
     top: 0;
 
-    border-image: linear-gradient(to right, #EF476F, #06D6A0);
+    border-image: linear-gradient(to right, #EF476F, #3A06D6,#06D6A0);
     border-image-slice: 1;
     border-style: solid;
     border-width: 0 0 5px 0;
