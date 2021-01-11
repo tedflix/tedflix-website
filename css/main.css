@@ -19,6 +19,7 @@ body {
 .header {
     background-color: black;
     padding: 10px;
+    z-index: 100;
 
     position: sticky;
     top: 0;
