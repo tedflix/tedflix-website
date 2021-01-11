@@ -45,19 +45,21 @@ body {
     font-size: 14px;
     margin: 8px;
     padding: 8px;
-    border-radius: 8px;
     font-weight: bold;
     transition: background-color 1s;
 }
 
 .menu > div:hover:not(.active) {
-    background-color: rgba(80, 80, 80, 1);
+    background-color: rgba(60, 60, 60, 1);
     cursor: pointer;
 }
 
 .active {
-    background-color: rgba(80, 80, 80, 1);
     cursor: auto;
+
+    border-color: white;
+    border-style: solid;
+    border-width: 0 0 2px 0;
 }
 
 .catalog-header {
