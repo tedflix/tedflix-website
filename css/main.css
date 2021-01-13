@@ -57,12 +57,12 @@ body {
 .menu > div:after {
     display: block;
     content: '';
-    border-color: white;
+    border-color: gray;
     border-style: solid;
     border-width: 0 0 2px 0;
 
     transform: scaleX(0);
-    transition: transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out, border-color 500ms ease-in-out;
 }
 
 .menu > div:hover:after {
@@ -71,6 +71,7 @@ body {
 
 .menu > div.active:after {
     transform: scaleX(1);
+    border-color: white;
 }
 
 .catalog-header {
