@@ -1,5 +1,3 @@
-switch_tab("home");
-
 function switch_tab(tab) {
     document.getElementById("content-home").style.display = "none";
     document.getElementById("content-about-us").style.display = "none";
@@ -14,4 +12,8 @@ function switch_tab(tab) {
     document.getElementById("tab-college-essay-completion-services").classList.remove("active");
 
     document.getElementById("tab-" + tab).classList.add("active");
+}
+
+function ready() {
+    switch_tab("home");
 }
