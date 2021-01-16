@@ -9,6 +9,7 @@ body {
     margin: 8px;
     animation: fade-in 1s;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
 }
 
 @keyframes fade-in {
