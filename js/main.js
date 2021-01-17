@@ -1,4 +1,4 @@
-var active_tab = null
+var active_tab = null;
 function switch_tab(tab) {
     if(active_tab != null){
         document.getElementById("content-" + active_tab).style.display = "none";
@@ -7,7 +7,7 @@ function switch_tab(tab) {
     
     document.getElementById("content-" + tab).style.display = "initial";
     document.getElementById("tab-" + tab).classList.add("active");
-    active_tab = tab
+    active_tab = tab;
 }
 
 function ready() {
@@ -24,4 +24,11 @@ function make_id() {
    }
    
    document.getElementById("upcat-code").innerHTML = result;
+}
+
+function unlock() {
+    var stuff = document.getElementsByClassName("not-safe");
+    for(var i=0; i<stuff.length; i++){
+        stuff[i].style.opacity = 1;
+    }
 }

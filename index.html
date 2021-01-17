@@ -23,7 +23,7 @@
             <div class = "menu">
                 <div class = "active" id = "tab-home" onclick = "switch_tab('home')"> Home </div>
                 <div class = "" id = "tab-about-us" onclick = "switch_tab('about-us')"> About Us </div>
-                <div class = "" id = "tab-cock-and-balls" onclick = "switch_tab('cock-and-balls')"> Cock and Balls </div>
+                <div class = "not-safe" id = "tab-cock-and-balls" onclick = "switch_tab('cock-and-balls')"> Cock and Balls </div>
                 <div class = "" id = "tab-college-essay-completion-services" onclick = "switch_tab('college-essay-completion-services')"> College Essay Completion Services </div>
                 <div class = "" id = "tab-ted-music" onclick = "switch_tab('ted-music')"> Ted Music </div>
                 <div class = "" id = "tab-minecraft-server" onclick = "switch_tab('minecraft-server')"> Minecraft Server </div>
@@ -52,8 +52,8 @@
                 <p> grid here </p>
             </div>
 
-            <div class = "catalog-header"> YIFF </div>
-            <div class = "catalog yiff-catalog">
+            <div class = "catalog-header not-safe"> YIFF </div>
+            <div class = "catalog yiff-catalog not-safe">
                 <img src = "resources/yiff/example1.png" height = "3">
                 <img src = "resources/yiff/example2.png" height = "3">
                 <img src = "resources/yiff/example3.png" height = "3">
@@ -64,6 +64,8 @@
                 <img src = "resources/yiff/example8.png" height = "3">
                 <p> grid here </p>
             </div>
+            
+            <input type="button" value="secret button" onclick="unlock()" /> 
 
         </div>
 
@@ -79,7 +81,7 @@
 
 
 
-        <div class = "content" id = "content-cock-and-balls">
+        <div class = "content not-safe" id = "content-cock-and-balls">
             cock and balls
         </div>
 
