@@ -100,7 +100,8 @@ input[type = button] {
     color: white;
     font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
     font-weight: bold;
-    
+}
+
 .not-safe {
-    opacity: 0;
+    display:none;
 }
