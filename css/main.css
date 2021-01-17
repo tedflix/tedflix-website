@@ -87,3 +87,7 @@ body {
 .catalog {
     margin: 0px 0px 72px 0px;
 }
+
+.not-safe {
+    opacity: 0;
+}

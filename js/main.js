@@ -25,3 +25,10 @@ function makeid() {
    
    document.getElementById("upcat-code").innerHTML = result;
 }
+
+function unlock() {
+    var stuff = document.getElementsByClassName("not-safe");
+    for(var i=0; i<stuff.length; i++){
+        stuff[i].style.opacity = 1;
+    }
+}
