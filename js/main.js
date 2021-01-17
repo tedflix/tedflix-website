@@ -15,7 +15,7 @@ function ready() {
 }
 
 //https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
-function makeid() {
+function make_id() {
    var result           = '';
    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
    var charactersLength = characters.length;
