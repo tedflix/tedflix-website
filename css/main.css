@@ -101,7 +101,3 @@ input[type = button] {
     font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
     font-weight: bold;
 }
-
-.not-safe {
-    display:none;
-}

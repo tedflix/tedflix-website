@@ -12,6 +12,7 @@ function switch_tab(tab) {
 
 function ready() {
     switch_tab("home");
+    hide();
 }
 
 //https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
@@ -29,6 +30,13 @@ function make_id() {
 function unlock() {
     var stuff = document.getElementsByClassName("not-safe");
     for(var i=0; i<stuff.length; i++){
-        stuff[i].style.opacity = 1;
+        stuff[i].style.display = "";
+    }
+}
+
+function hide() {
+    var stuff = document.getElementsByClassName("not-safe");
+    for(var i=0; i<stuff.length; i++){
+        stuff[i].style.display = "none";
     }
 }
