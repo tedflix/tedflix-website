@@ -5,7 +5,7 @@ function switch_tab(tab) {
         document.getElementById("tab-" + active_tab).classList.remove("active");
     }
     
-    document.getElementById("content-" + tab).style.display = "block";
+    document.getElementById("content-" + tab).style.display = "initial";
     document.getElementById("tab-" + tab).classList.add("active");
     active_tab = tab;
 }
