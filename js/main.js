@@ -13,10 +13,9 @@ function switch_tab(tab) {
 function ready() {
     var tab = window.location.hash.substr(1);
     
+    switch_tab("home");
     if( document.getElementById("content-" + tab) ){
         switch_tab(tab);
-    } else {
-        switch_tab("home");
     }
     hide();
 }
