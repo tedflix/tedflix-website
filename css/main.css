@@ -35,7 +35,26 @@ body {
     border-image-slice: 1;
     border-style: solid;
     border-width: 0 0 5px 0;
+    
+    /* scroll at 1 line */
+    overflow: auto;
+    white-space: nowrap;
+    
+    /* firefox scrollbar */
+    scrollbar-color: white black;
 }
+
+/* chrome scrollbar */
+::-webkit-scrollbar {
+    width: initial;
+}
+::-webkit-scrollbar-thumb { 
+    background: white; 
+} 
+  
+::-webkit-scrollbar-track { 
+    background: black 
+} 
 
 .logo {
     border-right: white solid 2px;
