@@ -16,6 +16,14 @@ body {
     display: none;
     text-align: center;
     flex: 1;
+    
+    overflow: auto;
+    
+    /* firefox scrollbar */
+    scrollbar-width: none;
+}
+.content::-webkit-scrollbar { 
+    display: none;
 }
 
 @keyframes fade-in {
