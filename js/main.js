@@ -8,6 +8,13 @@ function switch_tab(tab) {
     document.getElementById("content-" + tab).style.display = "initial";
     document.getElementById("tab-" + tab).classList.add("active");
     active_tab = tab;
+    
+    var pirate_frame = document.getElementById("pira-ted");
+    if(tab == "pira-ted"){
+        pirate_frame.src = "https://sci-hub.do"
+    } else {
+        pirate_frame.src = "about:blank"
+    }
 }
 
 function ready() {
